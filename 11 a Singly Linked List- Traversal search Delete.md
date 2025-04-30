@@ -20,35 +20,38 @@ STEP 6 : Stop.
 ### Program:
 ```
 class Node:
-      def     init (self, data=None):
-            self.data = data
-            self.next = None
+    def __init__(self, data):
+       self.data = data
+       self.next = None
+ 
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+ 
+    def addNode(self, data):
+        if self.tail is None:
+            self.head = Node(data)
+            self.tail = self.head
+        else:
+            self.tail.next = Node(data)
+            self.tail = self.tail.next
 
-
-class SLinkedList:
-       def      init (self):
-             self.head = None
-
-       def listprint(self):
-             printval = self.head
-             while printval is not None:
-                    print(printval.data)
-                    printval = printval.next
-
- list = SLinkedList()
-list.head = Node("Mon")
-e2 = Node("Tue")
-e3 = Node("Wed")
-
-# Link first Node to second node list.head.next = e2
-
-# Link second Node to third node e2.next = e3
-
-list.listprint()
-
+    def display(self):
+        current = self.head
+        while current is not None:
+           print(current.data, end = ' ')
+           current = current.next
+ 
+s = SinglyLinkedList()
+n = int(input())
+for i in range(n):
+    data = input()
+    s.addNode(data)
+s.display()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/f7547c51-0a61-45c2-93da-48fbb60de473)
+![image](https://github.com/23013357/19CS301-Module11/blob/main/r.png)
 
 
 ### Result: Thus, the given program is implemented and executed successfully .
