@@ -1,7 +1,8 @@
 ### EX: 11.d Doubly Linked List (forward and reverse)
 
 
-### Aim: To Type a python function to insert elements at the end of the doubly linked list and display the elements in forward and reverse direction.
+### Aim:
+To Type a python function to insert elements at the end of the doubly linked list and display the elements in forward and reverse direction.
 ### Algorithm:
 Start.
 
