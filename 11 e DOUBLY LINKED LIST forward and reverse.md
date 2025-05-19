@@ -64,7 +64,7 @@ llist.printList(llist.head)
 ```
 ### Output:
  
-![image](https://github.com/user-attachments/assets/c9883d28-638d-4f70-bc2d-f269a1606a45)
+![image](https://github.com/23013357/19CS301-Module11/blob/main/modul%2011.png)
 
  
 
